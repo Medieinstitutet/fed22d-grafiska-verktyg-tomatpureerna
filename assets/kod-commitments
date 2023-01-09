@@ -1,0 +1,23 @@
+# Commitments
+Vi träffas gemensamt på kontorstid. Vi har bokade träffar för denna första vecka. 
+Avstämmer med gruppen via träffarna och i chatt om något dyker upp. 
+Meddelar när vi får förhinder i vår teams grupp. 
+Kommunikation är a och o. Ta kontakt när man får problem eller känner sig osäker. 
+Sjuk och förhinder kan man få meddela de andra. 
+
+Vid kodning framöver kommer vi arbeta med issues och designerade branches i Github när vi kodar upp sidan. 
+Vi kommer använda eslint och prettier- med genemsam konfiguration. Suvi lägger in dessa. 
+Vi kommer skriva commit-meddelanden liknande exemplen som följer /feat /fix /style /bug. 
+Utgår från mindre delmål i varje del. Pusha när uppgiften är klar. 
+Hur ni hanterar att göra-listan/backlogen genom issue i Github. 
+Konstruktiv feedback på pullrequest. Språk på sidan är svenska och på github på engelska. 
+
+Genom att ha våra avstämningar och meddela om man sitter fast. 
+Gör "kapitelindelning" på hela delar. Radkommentarer till varje mindre del. 
+Vi ser över mängden kod och delar upp det vid behov. Tydlig namngivning och så få klasser som möjligt.
+CSSen: Har en tanke på att importera in delarna för de större delarna, som tex karusellen.   
+
+
+
+## Underskrivet av
+
