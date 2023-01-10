@@ -1,0 +1,23 @@
+# Commitments
+Arbete sker när det passar den enskilda medlemmen bäst men vi försöker utgå från kontorstid.
+All kommunikation sker på kontorstid. 
+Avstämmer med gruppen via träffar och i chatt om något dyker upp. 
+Meddelar när vi får förhinder i vår teams grupp. 
+Kommunikation är a och o. Ta kontakt när man får problem eller känner sig osäker. 
+
+Vid kodning framöver kommer vi arbeta med issues och designerade branches i Github när vi kodar upp sidan. 
+Vi kommer använda eslint och prettier- med genemsam konfiguration. Suvi lägger in dessa. 
+Vi kommer skriva commit-meddelanden liknande exemplen som följer /feat /fix /style /bug. 
+Utgår från mindre delmål i varje del. Pusha när uppgiften är klar.  
+Konstruktiv feedback på pullrequest. Språk på sidan är svenska och på github på engelska. 
+
+Gör "kapitelindelning" på hela delar. Radkommentarer till varje mindre del. 
+Vi ser över mängden kod och delar upp det vid behov. Tydlig namngivning och så få klasser som möjligt.
+
+Vi utgår från basic html, css och vanilla js men försöker få in några komponenter, tex cookies, via Vue om tiden
+tillåter.
+
+
+## Underskrivet av
+@marialarssonbovin
+
