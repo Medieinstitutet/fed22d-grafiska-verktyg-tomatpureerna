@@ -1,11 +1,14 @@
+@use 'variables' as var;
+
 * {
     box-sizing: border-box;
 }
 
 body {
-    background-color: aqua;
+    background-color: var.$lightBeige;
 }
 
 h1 {
     color: red;
+    font-family: var.$h1Font;
 }
