@@ -1,0 +1,17 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "prettier": "2.8.2",
+    "sass": "^1.57.1",
+    "vite": "^4.0.0"
+  }
+}
