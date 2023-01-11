@@ -1,0 +1,25 @@
+//Ta bort sedan
+/*$h1Font: "Rubik Bubbles", sans-serif;
+$h2-3Font: "Rubik Bubbles", sans-serif;
+$h4-6Font: "Rubik Mono One", sans-serif;
+$bodyText: "Rubik", sans-serif;
+//color-variabels
+$lightBeige: #F7ECDE;
+$beige: #E9DAC1;
+$ligthTeal: #54BAB9;
+$darkTeal: #18978F;
+$red: #B7433B;
+$almostBlack: #212427;*/
+
+@use 'variables' as var;
+
+h2 {
+    font-family: $h2-3Font;
+    font-size: 2.5rem;
+}
+.h2_paragraph_section {
+    background-color: $lightBeige;
+    outline: 2px solid green;
+    padding-left: 0.875rem;
+
+}
