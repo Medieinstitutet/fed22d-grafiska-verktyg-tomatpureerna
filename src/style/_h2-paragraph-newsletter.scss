@@ -13,13 +13,23 @@ $almostBlack: #212427;*/
 
 @use 'variables' as var;
 
-h2 {
-    font-family: $h2-3Font;
-    font-size: 2.5rem;
-}
+
 .h2_paragraph_section {
     background-color: $lightBeige;
     outline: 2px solid green;
-    padding-left: 0.875rem;
+    padding: 0.8125rem 0.875rem;
 
+}
+.h2_paragraph_section h2 {
+    font-family: $h2-3Font;
+    font-size: 2.5rem;
+    letter-spacing: 5%;
+    font-weight: 400;
+    margin: 0;
+}
+.h2_paragraph_section p {
+    width: 341px;
+    font-family: $bodyText;
+    letter-spacing: 0.1rem;
+    line-height: 200%;
 }
