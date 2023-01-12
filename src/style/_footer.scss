@@ -1,0 +1,70 @@
+@use 'variables' as var;
+
+/* * {
+  outline: 1px solid #f00 !important; // Turn on to see layout and overflowing containers better
+} */
+
+:root {
+    font-size: rem(16px);
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 37px;
+    margin-right: 37px;
+    border: 5px solid $darkTeal;
+    box-shadow: 0px 4px 4px 0px $darkTeal;
+
+}
+
+.footer__logo{
+    width: 82px;
+    height: 102px;
+    margin-top: 27px;
+}
+
+//TODO: make visited work.
+.footer__links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $h4-6Font;
+    font-size: 0.9375rem;
+    margin-top: 40px;
+    
+    a{
+        color: $almostBlack;
+        text-decoration: underline;
+    }
+
+    a:hover{
+        color: $darkTeal;
+        text-decoration: none;
+    }
+}
+
+.footer__socialmedia{
+    display: flex;
+    width: 175px;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: 33px;
+    margin-bottom: 20px;
+
+    .footer__socialmedia--facebooklogo{
+        width: 31px;
+        height: 54px;
+    }
+
+    .footer__socialmedia--linkedinlogo{
+        width: 35px;
+        height: 58px;
+    }
+
+    .footer__socialmedia--instagramlogo{
+        width: 56px;
+        height: 48px;
+    }
+}
