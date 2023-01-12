@@ -1,0 +1,15 @@
+@use 'variables' as var;
+
+:root {
+    font-size: rem(16px);
+    margin: 10px;
+}
+
+.section__about__h2 {
+    font-family: var.$h2-3Font;
+    font-size: 3rem;
+}
+.section__about__p {
+    font-family: var.$bodyText ;
+    font-size: 1rem;
+}
