@@ -71,3 +71,93 @@
         height: 48px;
     }
 }
+
+//*****************************************************************************************
+//---------------------------------- Media query Tablet -----------------------------------
+//*****************************************************************************************
+
+@media only screen and (min-width: $tablet-bp) {
+    .footer{
+        flex-direction: row;
+        justify-content: space-between;
+        margin-left: 7px;
+        margin-right: 3px;
+    }
+    
+    .footer__logo{
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+    
+    .footer__links{
+        font-size: 1.25rem;
+        letter-spacing: 0.1rem;
+        line-height: 1.6;
+        margin-top: 0px;
+    }
+    
+    .footer__socialmedia{
+        flex-direction: column-reverse;
+        width: auto;
+        margin-right: 30px;
+        margin-top: 5px;
+        margin-bottom: 0px;
+    
+        .footer__socialmedia--facebooklogo{
+            width: 65px;
+        }
+    
+        .footer__socialmedia--linkedinlogo{
+            margin-top: 10px;
+            width: 60px;
+            height: 45px;
+        }
+    
+        .footer__socialmedia--instagramlogo{
+            width: 60px;
+            height: 47px;
+        }
+    }
+}
+
+//*****************************************************************************************
+//---------------------------------- Media query Desktop -----------------------------------
+//*****************************************************************************************
+
+@media only screen and (min-width: $desktop-bp) {
+    
+    .footer__logo{
+        width: 160px;
+        height: 150px;
+        margin-left: 25px;
+    }
+    
+    .footer__links{
+        font-size: 2rem;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .footer__socialmedia{
+        margin-right: 70px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    
+        .footer__socialmedia--facebooklogo{
+            margin-right: 5px;
+            width: 52px;
+            height: 60px;
+        }
+    
+        .footer__socialmedia--linkedinlogo{
+            width: 55px;
+            height: 60px;
+        }
+    
+        .footer__socialmedia--instagramlogo{
+            width: 55px;
+            height: 52px;
+        }
+    }
+}
