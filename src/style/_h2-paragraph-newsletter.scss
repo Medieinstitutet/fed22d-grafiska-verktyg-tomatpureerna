@@ -1,24 +1,12 @@
-//Ta bort sedan
-/*$h1Font: "Rubik Bubbles", sans-serif;
-$h2-3Font: "Rubik Bubbles", sans-serif;
-$h4-6Font: "Rubik Mono One", sans-serif;
-$bodyText: "Rubik", sans-serif;
-//color-variabels
-$lightBeige: #F7ECDE;
-$beige: #E9DAC1;
-$ligthTeal: #54BAB9;
-$darkTeal: #18978F;
-$red: #B7433B;
-$almostBlack: #212427;*/
-
 @use 'variables' as var;
 
 
 .h2_paragraph_section {
+    position: relative;
     background-color: $lightBeige;
-    padding: 0.8125rem 0.875rem;
     height: 1250px;
     margin: 35px 0;
+    overflow: hidden;
 
 }
 .h2_paragraph_section h2 {
@@ -26,7 +14,7 @@ $almostBlack: #212427;*/
     font-size: 2.5rem;
     letter-spacing: 5%;
     font-weight: 400;
-    margin: 0;
+    margin-left: 3px;
     color: $almostBlack;
 }
 .h2_paragraph_section p {
@@ -35,20 +23,24 @@ $almostBlack: #212427;*/
     letter-spacing: 0.1rem;
     line-height: 200%;
     color: $almostBlack;
+    margin-left: 2px;
 }
 .h2_paragraph_section img {
     position: absolute;
-    right: 0;
-    top: 1085px;
+    right: -73px;
+    top: 875px;
+    width: 266px;
+    height: 266px;
 }
 .h2_paragraph_section div {
     width: 21.438rem;
     height: 13.25rem;
-    padding-left: 18px;
+    padding-left: 20px;
     background-color: rgba($color: #ffffff, $alpha: 0.6);
     position: absolute;
     z-index: 3;
     margin-top: 30px;
+    margin-left: 2px;
     border-radius: 15px;
 }
 .h2_paragraph_section h4 {
@@ -56,6 +48,8 @@ $almostBlack: #212427;*/
     font-weight: 400;
     font-size: 0.9375rem;
     color: $almostBlack;
+    margin-top: 12px;
+    margin-bottom: 5px;
 }
 .h2_paragraph_section input {
    border: 3px solid $ligthTeal;
@@ -64,6 +58,7 @@ $almostBlack: #212427;*/
    border-radius: 10px;
    padding-left: 5px;
    background-color: $lightBeige;
+   font-size: 1rem;
    &:focus {
         background-color: #ffffff;
     }
@@ -73,7 +68,7 @@ $almostBlack: #212427;*/
     border: none;
     border-radius: 20px;
     height: 47px;
-    width:163px;
+    width: 163px;
     margin: 20px 0 17px 0;
     font-family: $h4-6Font;
     color: $almostBlack;
@@ -90,5 +85,91 @@ $almostBlack: #212427;*/
     &:active{
         background-color: $darkTeal;
         box-shadow: none;
+    }
+}
+@media only screen and (min-width: $tablet-bp) {
+    .h2_paragraph_section {
+        padding-left: 15px;
+        width: 744px;
+    }
+    .h2_paragraph_section h2{
+        font-size: 3rem;
+        margin-left: 0;
+        margin-bottom: 27px;
+    }
+    .h2_paragraph_section p {
+        width: 674px;
+        margin-left: 0;
+    }
+    .h2_paragraph_section img {
+        width: 266px;
+        height: 266px;
+        top: 575px;
+        right: 50px;
+    }
+    .h2_paragraph_section div {
+        width: 478px;
+        height: 222px;
+    }
+    .h2_paragraph_section h4 {
+        font-size: 1.125rem;
+    }
+    .h2_paragraph_section input {
+        width: 352.25px;
+        height: 60.47px;
+        font-size: 1.5rem;
+    }
+    .h2_paragraph_section button {
+        width: 157px;
+        padding: 0;
+        margin-top: 17.53px;
+        margin-bottom: 17px;
+    }
+}
+@media only screen and (min-width: $desktop-bp) {
+    .h2_paragraph_section {
+        margin-top: 62.3px;
+        width: 1440px;
+    }
+    .h2_paragraph_section h2 {
+        font-size: 5.625rem;
+    }
+    .h2_paragraph_section p {
+        width: 731px;
+        flex-direction: column;
+        font-size: 1.25rem;
+    }
+    .h2_paragraph_section img {
+        top: 108px;
+        right: -88px;
+        width: 448px;
+        height: 452px;
+    }
+    .h2_paragraph_section div {
+    position: absolute;
+    top: 354px;
+    right: 20px;
+    width: 614px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 24.03px;
+    }
+    .h2_paragraph_section h4 {
+        font-size: 1.25rem;
+        padding-left: 8.48px;
+        margin-top: 18.49px;
+        margin-bottom: 33.5px;
+    }
+    .h2_paragraph_section input {
+        width: 445px;
+        height: 79.93px;
+        padding-left: 19.99px;
+        margin-left: 4.03px;
+    }
+    .h2_paragraph_section button {
+        width: 210.9px;
+        height: 59.84px;
+        margin-top: 33.29px;
     }
 }
