@@ -1,0 +1,47 @@
+@use '/src/style/variables' as var;
+
+/* * {
+  outline: 1px solid #f00 !important; // Turn on to see layout and overflowing containers better
+} */
+
+:root {
+    font-size: rem(16px);
+}
+
+.cookiebanner__button__accept{
+    position: relative;
+    left: 200px;
+    bottom: 22px;
+    background-color: var.$ligthTeal;
+    color: var.$almostBlack;
+    font-family: var.$h4-6Font;
+    font-size: 0.875rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+    padding: 11px
+}
+
+.cookiebanner__button__accept:hover{
+    background-color: var.$darkTeal;
+}
+
+.cookiebanner__button__accept:active{
+    background-color: var.$darkTeal;
+}
+
+//*****************************************************************************************
+//---------------------------------- Media query Tablet -----------------------------------
+//*****************************************************************************************
+
+@media only screen and (min-width: var.$tablet-bp) {
+
+}
+
+//*****************************************************************************************
+//---------------------------------- Media query Desktop -----------------------------------
+//*****************************************************************************************
+
+@media only screen and (min-width: var.$desktop-bp) {
+
+}
