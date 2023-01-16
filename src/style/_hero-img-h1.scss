@@ -6,7 +6,6 @@
     //background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-
 }
 
 .h1__section__div{
@@ -16,19 +15,23 @@
 
 .h1__wheatly{
     font-family: $h1Font; 
+    font-weight: 300;
     color: $darkTeal;
-    font-size: 3.5rem;
+    font-size: 3.7rem;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
-    text-align: center;
-    margin-top: 50px;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    margin-left: 24%;
+    position: relative;
 }
 
-.h1__wheatly::first-letter {
+.h1__span {
     color: black;
-    font-size: 5.1rem;
-    letter-spacing: -0.5rem;
-    vertical-align: 1rem;
+    font-size: 6.5rem;
+    position: absolute;
+    left: -75px;
+    bottom: 8px;
 }
 
 .section__hero-img__H1__hidden-p{
@@ -36,6 +39,14 @@
 }
 
 @media screen and (min-width: 744px) {
+
+    .main__extraspace{
+        width: 100%;
+        height: 70px;
+        background-color: $lightBeige;
+
+    }
+
     .section__hero-img__H1{
         background: url('../../public/images/headerimage_tablet.jpg');
         width: 100vw;
@@ -44,10 +55,49 @@
         background-size: cover;
         background-position: center center;
     }
+
+    .section__hero-img__H1__hidden-p{
+        visibility: visible;
+        font-family: $bodyText;
+        text-transform: uppercase;
+        text-align: right;
+        position: relative;
+        right: 85px;
+        bottom: 50px;
+    }
+
+    .h1__wheatly{
+        font-family: $h1Font; 
+        font-weight: 300;
+        color: $darkTeal;
+        font-size: 7.5rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        //margin-top: 140px;
+        //margin-bottom: 20px;
+        //margin-left: 25%;
+        position: relative;
+        bottom: 50px;
+    }
+    
+    .h1__span {
+        color: black;
+        font-size: 11rem;
+        position: absolute;
+        left: -120px;
+        bottom: 25px;
+    }
 }
 
 
 @media screen and (min-width: 1440px) {
+
+    .main__extraspace{
+        width: 100%;
+        height: 140px;
+        background-color: $lightBeige;
+    }
+
     .section__hero-img__H1{
         background: url('../../public/images/headerimage_desktop.jpg');
         width: 100vw;
@@ -56,4 +106,38 @@
         background-size: cover;
         background-position: center center;
     }
+
+    .section__hero-img__H1__hidden-p{
+        visibility: visible;
+        font-family: $bodyText;
+        text-transform: uppercase;
+        text-align: right;
+        position: relative;
+        font-size: 1.8rem;
+        left: -210px;
+        bottom: 60px;
+    }
+
+    .h1__wheatly{
+        font-family: $h1Font; 
+        font-weight: 300;
+        color: $darkTeal;
+        font-size: 13rem;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem;
+        //margin-top: 140px;
+        //margin-bottom: 20px;
+        position: relative;
+        bottom: 25px;
+        left: 50px;
+    }
+    
+    .h1__span {
+        color: black;
+        font-size: 19rem;
+        position: absolute;
+        left: -185px;
+        bottom: 30px;
+    }
+
 }
