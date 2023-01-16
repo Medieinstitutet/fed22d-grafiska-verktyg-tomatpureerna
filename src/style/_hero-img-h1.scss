@@ -1,0 +1,114 @@
+
+@use 'variables' as var;
+
+.section__hero-img__H1{
+    background: url('/images/headerimage_mobile.jpg');
+    width: 100vw;
+    height: 163vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.h1__section__div{
+    display: flex;
+    position: relative;
+}
+
+.h1__wheatly{
+    font-family: $h1Font; 
+    font-weight: 300;
+    color: $darkTeal;
+    font-size: 3.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-top: 140px;
+    margin-bottom: 20px;
+    margin-left: 24%;
+    position: relative;
+}
+
+.h1__span {
+    color: black;
+    font-size: 6.5rem;
+    position: absolute;
+    left: -75px;
+    bottom: 8px;
+}
+
+.section__hero-img__H1__hidden-p{
+    visibility: hidden;
+}
+
+@media only screen and (min-width: $tablet-bp) {
+
+    .main__extraspace{
+        width: 100%;
+        height: 70px;
+        background-color: $lightBeige;
+
+    }
+
+    .section__hero-img__H1{
+        background: url('../../public/images/headerimage_tablet.jpg');
+        height: 86.7vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .section__hero-img__H1__hidden-p{
+        visibility: visible;
+        font-family: $bodyText;
+        text-transform: uppercase;
+        text-align: right;
+        position: relative;
+        right: 85px;
+        bottom: 50px;
+    }
+
+    .h1__wheatly{
+        font-size: 7.5rem;
+        bottom: 50px;
+    }
+    
+    .h1__span {
+        font-size: 11rem;
+        left: -120px;
+        bottom: 25px;
+    }
+}
+
+
+@media only screen and (min-width: $desktop-bp) {
+
+    .main__extraspace{
+        height: 140px;
+    }
+
+    .section__hero-img__H1{
+        background: url('../../public/images/headerimage_desktop.jpg');
+        height: 61.5vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .section__hero-img__H1__hidden-p{
+        font-size: 1.8rem;
+        left: -210px;
+        bottom: 60px;
+    }
+
+    .h1__wheatly{
+        font-size: 13rem;
+        bottom: 25px;
+        left: 50px;
+    }
+    
+    .h1__span {
+        font-size: 19rem;
+        left: -185px;
+        bottom: 30px;
+    }
+}
