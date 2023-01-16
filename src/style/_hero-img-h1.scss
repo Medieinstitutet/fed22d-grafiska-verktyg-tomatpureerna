@@ -1,4 +1,6 @@
 
+@use 'variables' as var;
+
 .section__hero-img__H1{
     background: url('/images/headerimage_mobile.jpg');
     width: 100vw;
@@ -38,7 +40,7 @@
     visibility: hidden;
 }
 
-@media screen and (min-width: 744px) {
+@media only screen and (min-width: $tablet-bp) {
 
     .main__extraspace{
         width: 100%;
@@ -78,7 +80,7 @@
 }
 
 
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: $desktop-bp) {
 
     .main__extraspace{
         height: 140px;
