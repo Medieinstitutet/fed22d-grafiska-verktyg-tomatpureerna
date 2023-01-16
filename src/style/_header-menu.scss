@@ -5,6 +5,7 @@
     background-color: $lightBeige;
     display: flex;
     justify-content: space-between;
+    z-index: 15;
 }
     
 .header__logo {
@@ -181,7 +182,6 @@
         width: 428px;
         height: 528px;
         border-radius: 0px 0px 0px 260px;
-
     }
     
     .menu__ul {
@@ -201,17 +201,22 @@
     .menu__ul__desktop{
         display: none;
     }
+
+    .headerbox {
+    z-index: 15;
+    height: 75px; 
+    }
 }
 
 @media screen and (min-width: 1440px) {
     .headerbox {
-        height: 140px;
+        height: 95px;
     }
 
     .header__logo {
-        width: 116px;
-        height: 103px;
-        margin-top: 20px;
+        width: 100px;
+        height: 90px;
+        margin-top: 5px;
         margin-left: 30px;
     }
     
@@ -225,8 +230,8 @@
 
     .menu__nav {
         background-color: $lightBeige;
-        width: 780px;
-        height: 138px;
+        width: 720px;
+        height: 95px;
         font-family: $h4-6Font;
         text-transform: uppercase;
         font-size: 1.3rem;
@@ -243,13 +248,13 @@
     .menu__li__desktop{
         list-style: none;
         padding-right: 30px;
-        padding-top: 15px;
+        padding-top: 2px;
     }
 
     .menu__li__desktop button {
         border-radius: 25px;
         width: 210px;
-        height: 60px;
+        height: 55px;
         border: 5px solid $ligthTeal;
         background-color: $lightBeige;
     }
