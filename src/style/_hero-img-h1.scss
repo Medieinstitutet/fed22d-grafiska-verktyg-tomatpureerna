@@ -3,8 +3,8 @@
     background: url('/images/headerimage_mobile.jpg');
     width: 100vw;
     height: 163vw;
-    //background-repeat: no-repeat;
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center center;
 }
 
@@ -49,10 +49,9 @@
 
     .section__hero-img__H1{
         background: url('../../public/images/headerimage_tablet.jpg');
-        width: 100vw;
         height: 86.7vw;
-        //background-repeat: no-repeat;
         background-size: cover;
+        background-repeat: no-repeat;
         background-position: center center;
     }
 
@@ -67,23 +66,12 @@
     }
 
     .h1__wheatly{
-        font-family: $h1Font; 
-        font-weight: 300;
-        color: $darkTeal;
         font-size: 7.5rem;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-        //margin-top: 140px;
-        //margin-bottom: 20px;
-        //margin-left: 25%;
-        position: relative;
         bottom: 50px;
     }
     
     .h1__span {
-        color: black;
         font-size: 11rem;
-        position: absolute;
         left: -120px;
         bottom: 25px;
     }
@@ -93,51 +81,32 @@
 @media screen and (min-width: 1440px) {
 
     .main__extraspace{
-        width: 100%;
         height: 140px;
-        background-color: $lightBeige;
     }
 
     .section__hero-img__H1{
         background: url('../../public/images/headerimage_desktop.jpg');
-        width: 100vw;
         height: 61.5vw;
-        //background-repeat: no-repeat;
         background-size: cover;
+        background-repeat: no-repeat;
         background-position: center center;
     }
 
     .section__hero-img__H1__hidden-p{
-        visibility: visible;
-        font-family: $bodyText;
-        text-transform: uppercase;
-        text-align: right;
-        position: relative;
         font-size: 1.8rem;
         left: -210px;
         bottom: 60px;
     }
 
     .h1__wheatly{
-        font-family: $h1Font; 
-        font-weight: 300;
-        color: $darkTeal;
         font-size: 13rem;
-        text-transform: uppercase;
-        letter-spacing: 0.2rem;
-        //margin-top: 140px;
-        //margin-bottom: 20px;
-        position: relative;
         bottom: 25px;
         left: 50px;
     }
     
     .h1__span {
-        color: black;
         font-size: 19rem;
-        position: absolute;
         left: -185px;
         bottom: 30px;
     }
-
 }
