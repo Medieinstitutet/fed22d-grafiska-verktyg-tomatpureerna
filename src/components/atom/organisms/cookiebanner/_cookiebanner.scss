@@ -10,6 +10,7 @@
 
 .cookiebanner{
     position: fixed;
+    min-height: 137px;
     bottom: 0px;
     background-color: var.$lightBeige;
     padding-left: 10px;
@@ -23,16 +24,24 @@
     }
 }
 
-
-
-
-
 //*****************************************************************************************
 //---------------------------------- Media query Tablet -----------------------------------
 //*****************************************************************************************
 
 @media only screen and (min-width: var.$tablet-bp) {
 
+    .cookiebanner{
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        min-height: 107px;
+        padding-left: 27px;
+        padding-right: 20px;
+    
+        p{
+            font-size: 1.0rem;
+        }
+    }
 }
 
 //*****************************************************************************************
@@ -41,4 +50,14 @@
 
 @media only screen and (min-width: var.$desktop-bp) {
 
+    .cookiebanner{
+        gap: 150px;
+        min-height: 152px;
+        padding-left: 20px;
+        padding-right: 70px;
+    
+        p{
+            font-size: 1.25rem;
+        }
+    }
 }
