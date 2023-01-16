@@ -1,4 +1,4 @@
 import './style.scss';
-import './slideshow.js';
+//import './slideshow.js';
 
 console.log('hej');
