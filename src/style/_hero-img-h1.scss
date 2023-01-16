@@ -1,17 +1,39 @@
 
 .section__hero-img__H1{
-    background: url('../../public/images/headerimage_mobile.jpg');
+    background: url('/images/headerimage_mobile.jpg');
     width: 100vw;
     height: 163vw;
     //background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+
 }
 
-.section__hero-img__H1__hidden-div{
+.h1__section__div{
+    display: flex;
+    position: relative;
+}
+
+.h1__wheatly{
+    font-family: $h1Font; 
+    color: $darkTeal;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.h1__wheatly::first-letter {
+    color: black;
+    font-size: 5.1rem;
+    letter-spacing: -0.5rem;
+    vertical-align: 1rem;
+}
+
+.section__hero-img__H1__hidden-p{
     visibility: hidden;
 }
-
 
 @media screen and (min-width: 744px) {
     .section__hero-img__H1{
