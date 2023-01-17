@@ -9,10 +9,13 @@
 }
     
 .header__logo {
+
     width: 30px;
     height: 30px;
+    position: relative;    
     margin-top: 15px;
     margin-left: 10px;
+    left: 100vw
 }
 
 .headerbox {
@@ -59,12 +62,12 @@
     
 .menu__input:hover + .menu button span:nth-child(2) {
     left: 0;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
   
 .menu__input:checked + .menu button span {
     position: absolute;
-    transition: all 0.6s ease-in-out;
+    transition: all 0.1s ease-in-out;
 }
   
 .menu__input:checked + .menu button span:nth-child(2) {
@@ -203,6 +206,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+
+    .menu__nav{
+        visibility: visible;
+    }
+
     .headerbox {
         height: 95px;
     }
