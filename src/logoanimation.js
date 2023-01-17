@@ -1,7 +1,5 @@
+import { gsap } from 'gsap';
 
-import {gsap} from 'gsap';
-
-//const logoanimation = document.querySelector('#header__logo__id');
-//gsap.to(logoanimation, { x: 500, delay: 1, rotate: 720 });
-
-gsap.to('#header__logo__id', { x: -470, delay: 1, rotate: -1440 });
+/* Denna animation stannar 10px från vänster, inväntar en sekund, och roterar fyra varv.
+100vw är startpositionen. */
+gsap.fromTo('#header__logo__id', { left: '100vw' }, { left: '10px', delay: 1, rotate: -1440 });
