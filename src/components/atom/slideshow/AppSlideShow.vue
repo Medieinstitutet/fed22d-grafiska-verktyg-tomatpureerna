@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="slideshow">
     <div ref="swiperElement" class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="item in products" :key="item.product">
@@ -14,23 +14,18 @@
         </div>
         </div>
       </div>
-      <button class="swiper-button-prev" @click="previousSlide"></button>
-    <button class="swiper-button-next" @click="nextSlide"></button>
-    </div>
   </div>
+  <button class="swiper-button-prev left" @click="previousSlide"></button>
+  <button class="swiper-button-next right" @click="nextSlide"></button>
+    </div>
 </template>
 
 <script setup>
-
 import { onMounted, ref } from 'vue';
 import { Swiper } from 'swiper';
-import 'swiper/css/navigation';
 import vetemjolk from '/images/wheatly_desktop.jpg';
 import vetegryn from '/images/wheatbarlow_desktop.jpg';
 import vetegrot from '/images/wheatporridge_desktop.jpg';
-
-
-import './style.scss';
 
 // Vi sparar HTML-elementet som innehåller våra slides i en variabel
 const swiperElement = ref(null);
@@ -45,16 +40,16 @@ function setupSwiper() {
   // Spara swipern i en variabel som heter slideshow (vi måste skriva slideshow.value pga. Vue)
   slideshow.value = new Swiper(swiperElement.value, {
     speed: 400,
-    spaceBetween: 100,
+    spaceBetween: 50,
     slidesPerView: 1,
     breakpoints: {
       744: {
         slidesPerView: 3,
-        spaceBetween: 50,
+        spaceBetween: 20,
       },
       1440: {
         slidesPerView: 3,
-        spaceBetween: 40,
+        spaceBetween: 20,
       },
     },
     navigation: {
@@ -105,82 +100,7 @@ const products = [
 ];
 
 </script>
-<style>
-.swiper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 400px;
-  padding-left: 50px;
-  padding-right: 50px;
 
-}
-
-.swiper-slide {
-  width: 88%;
-  height: auto;
-  margin-top:5px;
-  margin-bottom: 10px;
-  background-color: #F5F5F5;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-radius: 20px;
-  filter: drop-shadow(0px 4px 4px #18978F);
-}
-.text-wrapper {
-  padding-left:20px;
-  padding-right:20px;
-}
-h2 {
-  font-family: Rubik Mono One;
-  letter-spacing: 0.1rem;
-
-}
-h2 span {
-    font-size: 1rem;
-    color: #18978F;
-}
-p {
-  font-family: Rubik;
-  font-size: 0.8rem;
-  letter-spacing: 0.1rem;
-  line-height: 24px;
-}
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 46%;
-  object-fit: cover;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-
-}
-.swiper-button-next, .swiper-button-prev{
-    color: black;
-    border: none;
-    position:absolute;
-    background: none;
-}
-.swiper-button-next:after, .swiper-button-prev:after {
-  font-size: 25px;
-  font-weight: bold;
-}
-
-@media screen and (min-width: 744px) {
-  .swiper-wrapper {
-    width: 90%;
-    margin-right: 50px;
-  }
-  .swiper-slide-next {
-    width: 32%;
-  }
-  .swiper-slide-active, .swiper-slide-duplicate-prev, .swiper-slide-prev, .swiper-slide-duplicate-active{
-    opacity: 50%;
-    height: 300px;
-    overflow: hidden;
-    margin-top: 50px;
-  }
-  
-}
+<style scoped lang="scss">
+@import '_slideshow.scss'
 </style>
