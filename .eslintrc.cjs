@@ -1,21 +1,18 @@
 module.exports = {
-  env: {
-    browser: true,
-    es2021: true,
-  },
-  extends: [
-    'plugin:vue/vue3-essential',
-    'airbnb-base',
-  ],
-  overrides: [
-  ],
-  parserOptions: {
-    ecmaVersion: 'latest',
-  },
-  plugins: [
-    'vue',
-  ],
-  rules: {
-    'no-console': ['warn', { allow: ['warn', 'error', 'log'] }],
-  },
+	env: {
+		browser: true,
+		es2021: true,
+	},
+	extends: "eslint:recommended",
+	overrides: [],
+	parserOptions: {
+		ecmaVersion: "latest",
+		sourceType: "module",
+	},
+	rules: {
+		indent: ["error", "tab"],
+		quotes: ["error", "double"],
+		semi: ["error", "always"],
+		"no-multi-spaces": ["error"],
+	},
 };
