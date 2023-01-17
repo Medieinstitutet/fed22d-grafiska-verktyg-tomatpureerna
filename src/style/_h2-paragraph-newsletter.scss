@@ -87,24 +87,43 @@
     }
 }
 .h2_paragraph_section_newsletter_modal.hidden {
-    visibility: hidden; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 100; /* Sit on top */
-    left: 100px;
-    top: 50px;
-    width: 50%;
-    height: 30%;
-    background-color: antiquewhite;
+    visibility: hidden;
 }
 .h2_paragraph_section_newsletter_modal.visible {
     visibility: visible;
-    display: block;
+    display: inline-block;
+    min-width: fit-content;
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    max-height: 200px;
+    background-color:#fff;
+    border: 3px solid $ligthTeal;
+    border-radius: 15px;
+    z-index: 100; 
+    padding: 10px 0 0 10px;
 }
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+.h2_paragraph_section_newsletter_modal.visible .modal_text {
+    font-family: $bodyText;
+    letter-spacing: 0.1rem;
+    line-height: 200%;
+    text-align: center;
+    color: $almostBlack;
+    margin: 0;
+
+}
+.closeModal {
+    color: $almostBlack;
+    background-color: $ligthTeal;
+    font-family: $h4-6Font;
+    color: $almostBlack;
+    font-family: 'Rubik Mono One';
+    font-style: normal;
+    font-size: 2rem;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 0 4px 0 4px;
     &:hover :focus{
         color: black;
         text-decoration: none;
