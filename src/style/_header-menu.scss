@@ -108,7 +108,6 @@
     width: 248px;
     height: 308px;
     border-radius: 0px 0px 0px 145px;
-    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     visibility: hidden;
 }
 
@@ -209,6 +208,7 @@
 
     .menu__nav{
         visibility: visible;
+        transition: none;
     }
 
     .headerbox {
