@@ -12,7 +12,9 @@ function validateEmail(event) {
 		modal.classList.add("visible");
 	}
 	else {
-		alert("Du har fyllt i en ogiltig emailadress");
+		inputField.value = "";
+		inputField.placeholder="Du har fyllt i en ogiltig emailadress";
+		console.log(inputField.placeholder);
 	}
 }
 closeModal.addEventListener("click", closeModalPressed);
