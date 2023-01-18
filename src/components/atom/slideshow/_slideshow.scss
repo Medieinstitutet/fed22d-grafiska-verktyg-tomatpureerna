@@ -3,28 +3,34 @@
 .slideshow {
   display: flex;
     justify-content: center;
+    align-items: center;
     position: relative;
     width: 100%;
     height: fit-content;
+    outline: solid red 2px;
 }
 .swiper {
     display: flex;
     justify-content: center;
     position: relative;
-    width: 100%;
-    height: fit-content;
-    padding-left: 3.1rem;
-    padding-right: 3.1rem;
+    width: 266px;
+    height: 409px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    outline: solid blue 1px;
   }
 
   .swiper-slide{
     display: flex;
     flex-direction: column;
+    height: 400px;
+    width: 258px;
     margin-top: 0.3rem;
     margin-bottom: 0.6rem;
     background-color: var.$lightBeige;
     border-radius: 1.25rem;
     filter: drop-shadow(0px 4px 4px var.$darkTeal);
+    outline: solid purple 2px;
 
   }
 
@@ -73,30 +79,32 @@
   }
   
   @media screen and (min-width: var.$tablet-bp) {
+    .slideshow {
+      width: 664px;
+      margin-left: 20px;
+    }
     .swiper {
-      width: 90%;
+      width: 615px;
+      height: 433px;
       align-items: flex-start;
       padding-left: 1.25rem;
-      padding-right: 2.7rem;
+      padding-right: 1.8rem;
     }
     .swiper-slide {
       flex-basis: auto;
       overflow: hidden;
       align-items: center;
+      width: 615px;
       
     }
-    .swiper-wrapper {
-      width: 100%;
-    }
-  
     .swiper-slide-next {
-      width: 37% !important;
+      width: 236px !important;
       align-self: center;
     }
     .swiper-slide-active, .swiper-slide-duplicate-prev, .swiper-slide-prev, .swiper-slide-duplicate-active, .swiper-slide-duplicate-next{
       opacity: 50%;
       height: 300px;
-      width: 31% !important;
+      width: 169px !important;
       overflow: hidden;
       margin-top: 3.1rem;
 
@@ -104,6 +112,35 @@
         font-size: 1.25rem;
       }
     }
+    .right{
+      right: 0;
+      padding: 0;
+    }
+    .left {
+      left: 0;
+      padding: 0;
+    }
+  }
+  @media screen and (min-width: var.$desktop-bp) {
+    .slideshow {
+      width: 1054px;
+      height: 505px;
+      margin-left: 173px;
+    }
+    .swiper {
+      height: 505px;
+      width: 977px;
+      padding-left: 3.6rem;
+      padding-right: 3.3rem;
+    }
+    .swiper-slide-next{
+      width: 372px !important;
+      height: 494px;
     
+    }
+    .swiper-slide-active, .swiper-slide-duplicate-prev, .swiper-slide-prev, .swiper-slide-duplicate-active, .swiper-slide-duplicate-next{
+      width: 266px !important;
+      height: 71%;
+    }
   }
  
