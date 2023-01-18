@@ -7,83 +7,83 @@
     height: 1250px;
     margin: 35px 0;
     overflow: hidden;
-}
-.h2_paragraph_section h2 {
-    font-family: $h2-3Font;
-    font-size: 2.5rem;
-    letter-spacing: 5%;
-    font-weight: 400;
-    margin-left: 3px;
-    color: $almostBlack;
-}
-.h2_paragraph_section p {
-    width: 340px;
-    font-family: $bodyText;
-    letter-spacing: 0.1rem;
-    line-height: 200%;
-    color: $almostBlack;
-    margin-left: 2px;
-}
-.h2_paragraph_section img {
-    position: absolute;
-    right: -73px;
-    top: 875px;
-    width: 266px;
-    height: 266px;
-}
-.h2_paragraph_section div {
-    width: 21.438rem;
-    height: 13.25rem;
-    padding-left: 20px;
-    background-color: rgba($color: #ffffff, $alpha: 0.6);
-    position: absolute;
-    z-index: 3;
-    margin-top: 30px;
-    margin-left: 2px;
-    border-radius: 15px;
-}
-.h2_paragraph_section h4 {
-    font-family: $h4-6Font;
-    font-weight: 400;
-    font-size: 0.9375rem;
-    color: $almostBlack;
-    margin-top: 12px;
-    margin-bottom: 5px;
-}
-.h2_paragraph_section input {
-   border: 3px solid $ligthTeal;
-   width: 249px;
-   height: 45px; 
-   border-radius: 10px;
-   padding-left: 5px;
-   background-color: $lightBeige;
-   font-size: 1rem;
-   &:focus {
-        background-color: #ffffff;
+    h2 {
+        font-family: $h2-3Font;
+        font-size: 2.5rem;
+        letter-spacing: 5%;
+        font-weight: 400;
+        margin-left: 3px;
+        color: $almostBlack;
     }
-}
-.h2_paragraph_section button {
-    background-color: $ligthTeal;
-    border: none;
-    border-radius: 20px;
-    height: 47px;
-    width: 163px;
-    margin: 20px 0 17px 0;
-    font-family: $h4-6Font;
-    color: $almostBlack;
-    font-family: 'Rubik Mono One';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    &:hover {
-        background-color: $darkTeal;
+    p {
+        width: 340px;
+        font-family: $bodyText;
+        letter-spacing: 0.1rem;
+        line-height: 200%;
+        color: $almostBlack;
+        margin-left: 2px;
     }
-    &:active{
-        background-color: $darkTeal;
-        box-shadow: none;
+    img {
+        position: absolute;
+        right: -73px;
+        top: 875px;
+        width: 266px;
+        height: 266px;
+    }
+    div {
+        width: 21.438rem;
+        height: 13.25rem;
+        padding-left: 20px;
+        background-color: rgba($color: #ffffff, $alpha: 0.6);
+        position: absolute;
+        z-index: 3;
+        margin-top: 30px;
+        margin-left: 2px;
+        border-radius: 15px;
+    }
+    h4 {
+        font-family: $h4-6Font;
+        font-weight: 400;
+        font-size: 0.9375rem;
+        color: $almostBlack;
+        margin-top: 12px;
+        margin-bottom: 5px;
+    }
+    input {
+        border: 3px solid $ligthTeal;
+        width: 249px;
+        height: 45px; 
+        border-radius: 10px;
+        padding-left: 5px;
+        background-color: $lightBeige;
+        font-size: 1rem;
+        &:focus {
+             background-color: #ffffff;
+         }
+    }
+    button {
+        background-color: $ligthTeal;
+        border: none;
+        border-radius: 20px;
+        height: 47px;
+        width: 163px;
+        margin: 20px 0 17px 0;
+        font-family: $h4-6Font;
+        color: $almostBlack;
+        font-family: 'Rubik Mono One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        &:hover {
+            background-color: $darkTeal;
+        }
+        &:active{
+            background-color: $darkTeal;
+            box-shadow: none;
+        } 
     }
 }
 .h2_paragraph_section_newsletter_modal.hidden {
@@ -134,85 +134,85 @@
     .h2_paragraph_section {
         padding-left: 15px;
         width: 744px;
-    }
-    .h2_paragraph_section h2{
-        font-size: 3rem;
-        margin-left: 0;
-        margin-bottom: 27px;
-    }
-    .h2_paragraph_section p {
-        width: 674px;
-        margin-left: 0;
-    }
-    .h2_paragraph_section img {
-        width: 266px;
-        height: 266px;
-        top: 575px;
-        right: 50px;
-    }
-    .h2_paragraph_section div {
-        width: 478px;
-        height: 222px;
-    }
-    .h2_paragraph_section h4 {
-        font-size: 1.125rem;
-    }
-    .h2_paragraph_section input {
-        width: 352.25px;
-        height: 60.47px;
-        font-size: 1.5rem;
-    }
-    .h2_paragraph_section button {
-        width: 157px;
-        padding: 0;
-        margin-top: 17.53px;
-        margin-bottom: 17px;
+        h2{
+            font-size: 3rem;
+            margin-left: 0;
+            margin-bottom: 27px;
+        }
+        p {
+            width: 674px;
+            margin-left: 0;
+        }
+        img {
+            width: 266px;
+            height: 266px;
+            top: 575px;
+            right: 50px;
+        }
+        div {
+            width: 478px;
+            height: 222px;
+        }
+        h4 {
+            font-size: 1.125rem;
+        }
+        input {
+            width: 352.25px;
+            height: 60.47px;
+            font-size: 1.5rem;
+        }
+        button {
+            width: 157px;
+            padding: 0;
+            margin-top: 17.53px;
+            margin-bottom: 17px;
+        }
     }
 }
 @media only screen and (min-width: $desktop-bp) {
     .h2_paragraph_section {
         margin-top: 62.3px;
         width: 1440px;
-    }
-    .h2_paragraph_section h2 {
-        font-size: 5.625rem;
-    }
-    .h2_paragraph_section p {
-        width: 731px;
-        flex-direction: column;
-        font-size: 1.25rem;
-    }
-    .h2_paragraph_section img {
-        top: 108px;
-        right: -88px;
-        width: 448px;
-        height: 452px;
-    }
-    .h2_paragraph_section div {
-    position: absolute;
-    top: 354px;
-    right: 20px;
-    width: 614px;
-    height: 330px;
-    display: flex;
-    flex-direction: column;
-    padding-left: 24.03px;
-    }
-    .h2_paragraph_section h4 {
-        font-size: 1.25rem;
-        padding-left: 8.48px;
-        margin-top: 18.49px;
-        margin-bottom: 33.5px;
-    }
-    .h2_paragraph_section input {
-        width: 445px;
-        height: 79.93px;
-        padding-left: 19.99px;
-        margin-left: 4.03px;
-    }
-    .h2_paragraph_section button {
-        width: 210.9px;
-        height: 59.84px;
-        margin-top: 33.29px;
+        h2 {
+            font-size: 5.625rem;
+        }
+        p {
+            width: 731px;
+            flex-direction: column;
+            font-size: 1.25rem;
+        }
+        img {
+            top: 108px;
+            right: -88px;
+            width: 448px;
+            height: 452px;
+        }
+        div {
+            position: absolute;
+            top: 354px;
+            right: 20px;
+            width: 614px;
+            height: 330px;
+            display: flex;
+            flex-direction: column;
+            padding-left: 24.03px;
+            }
+        h4 {
+            font-size: 1.25rem;
+            padding-left: 8.48px;
+            margin-top: 18.49px;
+            margin-bottom: 33.5px;
+        }
+        input {
+            width: 445px;
+            height: 79.93px;
+            padding-left: 19.99px;
+            margin-left: 4.03px;
+        }
+        button {
+            width: 210.9px;
+            height: 59.84px;
+            margin-top: 33.29px;
+        }
     }
 }
