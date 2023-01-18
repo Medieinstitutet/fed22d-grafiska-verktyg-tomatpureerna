@@ -10,6 +10,7 @@
 
 .cookiebanner{
     position: fixed;
+    z-index: 100;
     min-height: 137px;
     bottom: 0px;
     background-color: var.$lightBeige;
