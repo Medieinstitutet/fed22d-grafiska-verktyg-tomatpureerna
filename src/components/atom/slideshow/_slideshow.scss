@@ -43,12 +43,13 @@
     padding-right:1.25rem;
   }
 
-  h2 {
+  h4 {
     font-family: var.$h4-6Font;
+    font-size: 1.25rem;
     letter-spacing: 0.1rem;
   
   }
-  h2 span {
+  h4 span {
       font-size: 1rem;
       color: var.$darkTeal;
   }
@@ -110,7 +111,7 @@
       overflow: hidden;
       margin-top: 3.1rem;
 
-      h2 {
+      h4 {
         font-size: 1.25rem;
       }
     }
