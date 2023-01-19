@@ -1,3 +1,4 @@
+@use 'variables' as var;
 
 .headerbox {
     width: 100%;
@@ -139,7 +140,7 @@
     display: none;
 }
 
-@media screen and (min-width: 744px) {
+@media only screen and (min-width: $tablet-bp) {
     .header__logo {
         width: 50px;
         height: 40px;
@@ -204,7 +205,7 @@
     }
 }
 
-@media screen and (min-width: 1440px) {
+@media only screen and (min-width: $desktop-bp) {
 
     .menu__nav{
         visibility: visible;
