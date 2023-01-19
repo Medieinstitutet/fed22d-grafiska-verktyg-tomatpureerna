@@ -5,27 +5,27 @@
         <div class="swiper-slide" v-for="item in products" :key="item.product">
           <img :src="item.image[0].url" :alt="item.image[0].alt" />
           <div class="text-wrapper">
-          <h2>{{ item.product}}
+          <h4>{{ item.product}}
             <template v-if="item.sub">
             <span>{{item.sub}}</span>
             </template>
-          </h2>
+          </h4>
           <p>{{ item.description}}</p>
         </div>
         </div>
       </div>
   </div>
-    <button class="swiper-button-prev left" @click="previousSlide"></button>
-    <button class="swiper-button-next right" @click="nextSlide"></button>
+    <button aria-label="leftButton" class="swiper-button-prev left" @click="previousSlide"></button>
+    <button aria-label="rightButton" class="swiper-button-next right" @click="nextSlide"></button>
   </div>
 </template>
 
 <script setup>
 import { onMounted, ref } from 'vue';
 import { Swiper } from 'swiper';
-import vetemjolk from '/images/wheatly_desktop.jpg';
-import vetegryn from '/images/wheatbarlow_desktop.jpg';
-import vetegrot from '/images/wheatporridge_desktop.jpg';
+import vetemjolk from '/images/wheatly_desktop.webp';
+import vetegryn from '/images/wheatbarlow_desktop.webp';
+import vetegrot from '/images/wheatporridge_desktop.webp';
 
 // Vi sparar HTML-elementet som innehåller våra slides i en variabel
 const swiperElement = ref(null);
