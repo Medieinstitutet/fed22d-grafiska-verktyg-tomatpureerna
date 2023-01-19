@@ -47,10 +47,14 @@
     font-family: var.$h4-6Font;
     font-size: 1.25rem;
     letter-spacing: 0.1rem;
+    display: flex;
+    flex-direction: column;
   
   }
   h4 span {
+      display: inline-block;
       font-size: 1rem;
+      padding-top: 10px;
       color: var.$darkTeal;
   }
 
@@ -114,6 +118,9 @@
       h4 {
         font-size: 1.25rem;
       }
+      h4 span {
+        display: inline-block;
+      }
     }
     .right{
       right: 0;
@@ -144,6 +151,9 @@
     .swiper-slide-active, .swiper-slide-duplicate-prev, .swiper-slide-prev, .swiper-slide-duplicate-active, .swiper-slide-duplicate-next{
       width: 266px !important;
       height: 71%;
+    }
+    h4 span {
+      display: inline-block;
     }
   }
  
