@@ -15,9 +15,9 @@
         </div>
       </div>
   </div>
-  <button class="swiper-button-prev left" @click="previousSlide"></button>
-  <button class="swiper-button-next right" @click="nextSlide"></button>
-    </div>
+    <button class="swiper-button-prev left" @click="previousSlide"></button>
+    <button class="swiper-button-next right" @click="nextSlide"></button>
+  </div>
 </template>
 
 <script setup>
@@ -72,7 +72,7 @@ const products = [
   {
     product: 'Vetemjölk',
     sub: 'original',
-    description: 'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, Mer lorem Ipsum för folket!',
+    description: 'Precis som "vanlig" mjölk men helt vegansk och utan onödiga tillsatser. Dricks med gott samvete!',
     image: [
       {
         url: vetemjolk,
@@ -81,7 +81,7 @@ const products = [
   },
   {
     product: 'Vetegröt',
-    description: 'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, Mer lorem Ipsum för folket!',
+    description: 'En slät och len gröt för dig som inte gillar havrens vassa gryn. Lagom mycket smak för den kräsne.',
     image: [
       {
         url: vetegrot,
@@ -90,7 +90,7 @@ const products = [
   },
   {
     product: 'Vetegryn',
-    description: 'Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, Mer lorem Ipsum för folket!',
+    description: 'Bearbetade gryn från vetekornet. Perfekt för tex granola eller som grund till eget mjöl.',
     image: [
       {
         url: vetegryn,
