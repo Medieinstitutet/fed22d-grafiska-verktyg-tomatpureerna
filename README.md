@@ -24,8 +24,8 @@ Vi har hållit oss till deras design i största möjliga mån.
 
 ## Android:
 ![Meny](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/andriod%20menu%20(1).png)
-![Meny_öppen](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/andriod%20menu%20open.png)
-![Slider](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/andriod%20slider.png)
+![Meny_öppen](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/andriod%20menu%20(3).png)
+![Slider]([https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/andriod%20slider.png](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/andriod%20menu%20(4).png))
 ![Nyhetsbrev_Footer](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/andriod%20footer.png)
 
 # Techstack
