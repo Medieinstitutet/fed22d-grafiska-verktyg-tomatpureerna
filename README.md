@@ -3,25 +3,45 @@
 *<strong>Inga djur, inget lidande, inga övervärderade produkter! Endast den bästa och mest naturliga vetemjölken för folket, av vanligt folk!</strong>*
 <br>
 
-## Om designen
+# Om designen
 
 [Länk till designen i Figma](https://www.figma.com/file/gHK0pH5e5GA0nQtlWFTML2/Untitled?node-id=9%3A26&t=Pi3501H8yA9OPURh-1)
 
-### Färgval
-Valet av färger kommer från mjuka färger som vi associerar med vete, jordbruk, hållbarhet och natur. Kontrasten mellan färgerna valde för att knapparna ska synas så bra som möjligt.
+Vi fick design från gruppen Tomatpuréerna. De valde att ta fram en ny produkt, Wheatly, som behövde en hemsida med produktslider. 
+Vi har hållit oss till deras design i största möjliga mån.
 
-Detta har varit grunden i vår design och påverkat färgval och till exempel val av border radius på samtliga element för att framhäva detta.
+# Print screens
+## Desktop:
+![Meny](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/desktop%20menu.png)
+![Produktslider](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/desktop%20slider.png)
+![Nyhetsbrev](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/desktop%20newsletter.png)
+![Footer](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/desktop%20footer.png)
 
-### Typsnitt
-Loggans typsnitt är Rubik Bubble vilket vi valde för att den ska representera mjukhet och lekfullhet. Resten av texten är också från Rubik-familjen för att sidan ska vara sammanhängande och smälta ihop på ett harmoniskt sätt. Fonterna finns som Google Fonts.
+## Tablet:
+![Meny](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/tabler%20menu.png)
+![Produktslider](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/tablet%20slider.png)
+![Nyhetsbrev](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/tablet%20newsletter.png)
 
+## Android:
+![Meny](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/andriod%20menu%20(1).png)
+![Meny_öppen](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/andriod%20menu%20open.png)
+![Slider](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/andriod%20slider.png)
+![Nyhetsbrev_Footer](https://raw.githubusercontent.com/Medieinstitutet/fed22d-grafiska-verktyg-tomatpureerna/main/src/assets/screenshot_finished/andriod%20footer.png)
 
-### Logga
-W:et längst upp till vänster på sidan är i SVG och kan animeras. När sidan laddas ska loggan komma in från höger samtidigt som den snurrar och placeras längst upp till vänster. 
+# Techstack
+HTML
+CSS
+Vanilla JS
+Vue
+Vite
+ESLint
+Prettier
 
-### Slideshow
-I tablet och desktop ska produkt-slideshowen visas tre bilder i bredd med den mittersta som aktuellt val där mer information visas. De övriga ska vara transparenta för att den mittersta ska ha mest fokus. När man byter produkt ska en animering ske. Beroende på vilket håll du väljer att gå så ska det mittersta kortet krympa och se ut som det tidigare kortet som legat bredvid. Kortet som ska ligga i mitten ska växa och produkttexten ska fadas in.
-I mobilversionen ska endast det valda kortet visas och en snygg animation ska ske.
+# Länk till live-sida
+https://medieinstitutet.github.io/fed22d-grafiska-verktyg-tomatpureerna/
 
-
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-c66648af7eb3fe8bc4f294546bfd86ef473780cde1dea487d3c4ff354943c9ae.svg)](https://classroom.github.com/online_ide?assignment_repo_id=9675814&assignment_repo_type=AssignmentRepo)
+# Vi som har byggt sidan
+@davidstalgren
+@Sporesong
+@TessDevon
+@MariaLBovin
