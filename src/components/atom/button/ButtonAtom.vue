@@ -9,7 +9,7 @@ function handleClick() {
 </script>
 
 <template>
-    <button @click="handleClick">{{ btnMsg }}</button>
+    <button tabindex="1" @click="handleClick">{{ btnMsg }}</button>
 </template>
 
 <style scoped lang="scss">

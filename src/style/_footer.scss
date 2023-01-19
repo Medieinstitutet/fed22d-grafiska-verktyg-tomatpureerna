@@ -1,13 +1,5 @@
 @use 'variables' as var;
 
-/* * {
-  outline: 1px solid #f00 !important; // Turn on to see layout and overflowing containers better
-} */
-
-:root {
-    font-size: rem(16px);
-}
-
 .footer{
     display: flex;
     flex-direction: column;
@@ -16,7 +8,7 @@
     margin-right: 37px;
     border: 5px solid $darkTeal;
     box-shadow: 0px 4px 4px 0px $darkTeal;
-
+    margin-bottom: 25px;
 }
 
 .footer__logo{

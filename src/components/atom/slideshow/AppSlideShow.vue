@@ -3,7 +3,7 @@
     <div ref="swiperElement" class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide" v-for="item in products" :key="item.product">
-          <img :src="item.image[0].url" />
+          <img :src="item.image[0].url" :alt="item.image[0].alt" />
           <div class="text-wrapper">
           <h2>{{ item.product}}
             <template v-if="item.sub">
@@ -76,7 +76,7 @@ const products = [
     image: [
       {
         url: vetemjolk,
-        alt: 'text',
+        alt: 'Vetemjölk',
       }],
   },
   {
@@ -85,7 +85,7 @@ const products = [
     image: [
       {
         url: vetegrot,
-        alt: 'text',
+        alt: 'Vetegröt',
       }],
   },
   {
@@ -94,7 +94,7 @@ const products = [
     image: [
       {
         url: vetegryn,
-        alt: 'text',
+        alt: 'Vetegryn',
       }],
   },
 ];

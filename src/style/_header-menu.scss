@@ -9,7 +9,6 @@
 }
     
 .header__logo {
-
     width: 30px;
     height: 30px;
     position: relative;    
@@ -58,6 +57,7 @@
     width: 55px;
     height: 55px;
     opacity: 0;
+    cursor: pointer;
 }
     
 .menu__input:hover + .menu button span:nth-child(2) {
