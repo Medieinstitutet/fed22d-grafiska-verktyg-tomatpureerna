@@ -30,9 +30,10 @@ Vi har hållit oss till deras design i största möjliga mån.
 
 # Techstack
 HTML
-CSS
+SCSS
 Vanilla JS
 Vue
+Gsap
 Vite
 ESLint
 Prettier
