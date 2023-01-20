@@ -1,0 +1,64 @@
+@use '/src/style/variables' as var;
+
+/* * {
+  outline: 1px solid #f00 !important; // Turn on to see layout and overflowing containers better
+} */
+
+:root {
+    font-size: rem(16px);
+}
+
+.cookiebanner{
+    position: fixed;
+    z-index: 100;
+    min-height: 137px;
+    bottom: 0px;
+    background-color: var.$lightBeige;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 3px solid black;
+
+    p{
+        font-family: var.$bodyText;
+        font-size: 0.875rem;
+        letter-spacing: 1.2px;
+    }
+}
+
+//*****************************************************************************************
+//---------------------------------- Media query Tablet -----------------------------------
+//*****************************************************************************************
+
+@media only screen and (min-width: var.$tablet-bp) {
+
+    .cookiebanner{
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        min-height: 107px;
+        padding-left: 27px;
+        padding-right: 20px;
+    
+        p{
+            font-size: 1.0rem;
+        }
+    }
+}
+
+//*****************************************************************************************
+//---------------------------------- Media query Desktop -----------------------------------
+//*****************************************************************************************
+
+@media only screen and (min-width: var.$desktop-bp) {
+
+    .cookiebanner{
+        gap: 150px;
+        min-height: 152px;
+        padding-left: 20px;
+        padding-right: 70px;
+    
+        p{
+            font-size: 1.25rem;
+        }
+    }
+}

@@ -1,0 +1,29 @@
+@use 'variables' as var;
+
+.section__about {
+    margin: 15px;
+}
+.section__about__h2 {
+    font-family: var.$h2-3Font;
+    font-size: 3rem;
+    letter-spacing: 0.2rem;
+    
+}
+.section__about__p {
+    font-family: var.$bodyText ;
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    line-height: 2rem;
+}
+
+@media screen and (min-width: var.$desktop-bp){
+    .section__about{
+        margin-right: 112px;
+    }
+    .section__about__h2{
+        font-size: 5.6rem;
+    }
+    .section__about__p {
+        font-size: 1.25rem;
+    }
+}

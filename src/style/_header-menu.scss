@@ -1,0 +1,268 @@
+@use 'variables' as var;
+
+.headerbox {
+    width: 100%;
+    height: 55px; 
+    background-color: $lightBeige;
+    display: flex;
+    justify-content: space-between;
+    z-index: 15;
+}
+    
+.header__logo {
+    width: 30px;
+    height: 30px;
+    position: relative;    
+    margin-top: 15px;
+    margin-left: 10px;
+    left: 100vw
+}
+
+.headerbox {
+    position: fixed;
+    top: 0px;
+}
+
+.menu {
+    margin-top: 10px;
+    margin-right: 7px;
+}
+    
+.menu__button {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    right: 10px;
+    top: 15px;
+    padding-top: 0px;
+    pointer-events: none;
+    z-index: 7;
+}
+
+.menu__button__span {
+    display: block;
+    width: 35px;
+    height: 2px;
+    background-color: black;
+    margin-bottom: 6px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px black;
+}
+
+.menu__input {
+    position: fixed;
+    top: 10px;
+    right: 0px;
+    z-index: 6;
+    width: 55px;
+    height: 55px;
+    opacity: 0;
+    cursor: pointer;
+}
+    
+.menu__input:hover + .menu button span:nth-child(2) {
+    left: 0;
+    transition: all 0.1s ease-in-out;
+}
+  
+.menu__input:checked + .menu button span {
+    position: absolute;
+    transition: all 0.1s ease-in-out;
+}
+  
+.menu__input:checked + .menu button span:nth-child(2) {
+    opacity: 0;
+}
+  
+.menu__input:checked + .menu button span:nth-child(1) {
+    transform: rotate(50deg);
+    height: 5.2px;
+    width: 28px;
+    right: 2px;
+    box-shadow: none;
+    border-radius: 1.8px;
+    z-index: 10;
+}
+  
+.menu__input:checked + .menu button span:nth-child(3) {
+    transform: rotate(-50deg);
+    height: 5.2px;
+    width: 28px;
+    right: 2px;
+    box-shadow: none;
+    border-radius: 1.8px;
+    z-index: 10;
+}
+
+.menu__input:checked + .menu nav {
+    visibility: visible;
+    opacity: 1;
+}
+
+.menu__nav {
+    position: fixed;
+    z-index: 5;
+    top: 0;
+    right: 0;
+    background-color: $ligthTeal;
+    width: 248px;
+    height: 308px;
+    border-radius: 0px 0px 0px 145px;
+    visibility: hidden;
+}
+
+.menu__ul {
+    list-style: none;
+    height: 305px;
+    width: 310px;
+    text-align: center;
+    position: relative;
+    top: 20px;
+    left: -40px;
+    font-family: $h2-3Font;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    letter-spacing: 0.05rem; 
+}
+
+.menu__li {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.a__menu{
+    color: black;
+    text-decoration: none;
+}
+
+.menu__ul__desktop{
+    display: none;
+}
+
+@media only screen and (min-width: $tablet-bp) {
+    .header__logo {
+        width: 50px;
+        height: 40px;
+        margin-top: 10px;
+        margin-left: 23px;
+    }
+
+    .menu__button {
+        position: relative;
+        top: 15px;
+        right: 65px;
+    }
+
+    .menu__button__span {
+        width: 75px;
+        margin-bottom: 10px;
+    }
+
+    .menu__input {
+        top: 0px;
+        right: 20px;
+        width: 80px;
+    }
+            
+    .menu__input:checked + .menu button span:nth-child(1) {
+        height: 10px;
+        width: 45px;
+        border-radius: 2px;
+        right: -30px;
+    }
+     
+    .menu__input:checked + .menu button span:nth-child(3) {
+        height: 10px;
+        width: 45px;
+        border-radius: 2px;
+        right: -30px;
+    }
+   
+    .menu__nav {
+        width: 428px;
+        height: 528px;
+        border-radius: 0px 0px 0px 260px;
+    }
+    
+    .menu__ul {
+        height: 375px;
+        width: 340px;
+        top: 15px;
+        left: 75px;
+        font-size: 2.2rem;
+        letter-spacing: 0.1rem; 
+    }
+    
+    .menu__li {
+        padding-top: 28px;
+        padding-bottom: 28px;
+    }
+
+    .headerbox {
+    z-index: 15;
+    height: 75px; 
+    }
+}
+
+@media only screen and (min-width: $desktop-bp) {
+
+    .menu__nav{
+        visibility: visible;
+        transition: none;
+    }
+
+    .headerbox {
+        height: 95px;
+    }
+
+    .header__logo {
+        width: 100px;
+        height: 90px;
+        margin-top: 5px;
+        margin-left: 30px;
+    }
+    
+    .menu__ul, .menu__button, .menu__input {
+        display: none;
+    }
+
+    .menu__ul__desktop{
+        display: block;
+    }
+
+    .menu__nav {
+        background-color: $lightBeige;
+        width: 720px;
+        height: 95px;
+        font-family: $h4-6Font;
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        letter-spacing: 0.05rem; 
+        visibility: visible;
+    }
+
+    .menu__ul__desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .menu__li__desktop{
+        list-style: none;
+        padding-right: 30px;
+        padding-top: 2px;
+    }
+
+    .menu__li__desktop button {
+        border-radius: 25px;
+        width: 210px;
+        height: 55px;
+        border: 5px solid $ligthTeal;
+        background-color: $lightBeige;
+    }
+
+    .menu__li__desktop :hover {
+        background-color: $ligthTeal;
+    }
+}
